@@ -72,7 +72,7 @@ button {
 
 #hero{
     padding: 0 0 0 1.5rem;
-    background: url("../assets/heroBackground(desktop).png");
+    background: url("assets/heroBackground(desktop).png");
     background-size: 100vw 100vh;
     position: relative;
 }
