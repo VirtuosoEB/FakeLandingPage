@@ -1,121 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" media="(max-width: 768px)">
+  <link rel="stylesheet" href="style(desktop).css" media="(min-width: 769px)">
+  <title></title>
 </head>
 
 <body>
   <main>
-    <section id="hero">
-      <h1>
-        Biotech <br> Innovations
+   <section id="hero">
+    <img src="../assets/fLP(desktop)gradient.svg" id="gradient">
+    <img src="../assets/fLP(mobile)gradient.svg" id="mobileGradient">
+    <img src="../assets/heroBackgroundIcons.svg" id="bg">
+      <h1 id="title" class="text" contenteditable="true">
+        Biotech <br class="mobileBr">Innovations
       </h1>
-      <h1>
-        "the future lies <br> within your <br> hands"
+      <h1 id="slogan" class ="text" contenteditable="true">
+        "the future lies <br class="mobileBr"> within your <br class="mobileBr"> hands"
       </h1>
-      <button>
+      <button id="cts" class="button" contenteditable="true">
         Buy Product
       </button>
     </section>
-    
+
     <div class="seperator"></div>
-    
+
     <section id="benefits">
+      <img src="../assets/fLP(desktop)gradient2.svg" id="benefits-gradient">
       <h2>
         Benefits
       </h2>
+        <div id="benefitsContainer">
+          <div class="benefit">
+            <h3 class="benefitTitle">Seamless human <br>integration </h3>
+            <div class="benefitIcon"><img src="../assets/brain.png"></div>
+            <p class="benefitInfo">
+              Advanced bio-feedback <br class="dBr">sensors that connect <br class="dBr">directly with muscle <br class="dBr">signals for natural <br class="dBr">movement.
+            </p>
+          </div>
       
-      <div class="benefit">
-        <div class="benefitIcon"><img src="/person.png"></div>
-        <h3 class="benefitTitle">Seamless human integration </h3>
-        <p class="benefitInfo">Advanced bio-feedback sensors that connect directly with muscle signals for natural movement.
-        </p>
-      </div>
+          <div class="benefit">
+            <h3 class="benefitTitle">Adaptive <br>Intelligence</h3>
+            <div class="benefitIcon"><img src="../assets/brain.png"></div>
+            <p class="benefitInfo">
+              AI learns your daily <br class="dBr">movements, adapting <br class="dBr">to your unique <br class="dBr">lifestyle.
+            </p>
+          </div>
       
-      <div class="benefit">
-        <div class="benefitIcon"><img src="/brain.png"></div>
-        <h3 class="benefitTitle">Adaptive Intelligence</h3>
-        <p class="benefitInfo">
-          AI learns your daily movements, adapting to your unique lifestyle.
-        </p>
-      </div>
-      
-      <div class="benefit">
-        <div class="benefitIcon"><img src="/tool.png"></div>
-        <h3 class="benefitTitle">Limitless Customization</h3>
-        <p class="benefitInfo">
-          Interchangeable modules for sport, work, or creative use.
-        </p>
-      </div >
+          <div class="benefit">
+            <h3 class="benefitTitle">Limitless <br>Customization</h3>
+            <div class="benefitIcon"><img src="../assets/tool.png"></div>
+            <p class="benefitInfo">
+              Interchangeable <br class="dBr">modules for sport, <br class="dBr">work, or creative use.
+            </p>
+          </div>
+        </div>
       
     </section>
-    
-    <div class="seperator"></div>
-    
+
+<div class="seperator"></div>
+
     <section id="socialProof">
-      <img src="/profile.png" id="profile">
-      <h2>
-        Sophia Kalin
-      </h2>
-      <div>
-        <p id="testemonial">
-          “Finally, tech that adapts to<br> me, not the other <br>way around. Life-
-          <br>changing.”
-        </p>
-        <p>
-          – Sophia Kalin, Engineer
-        </p>
+      <img src="../assets/fLP(desktop)gradient3.svg" id="socialProofGradient">
+      <div id="testimonialDiv">
+        <div>
+          <img src="../assets/profile.png" id="profile">
+          <h2>
+            Sophia Kalin
+          </h2>
+        </div>  
+          <p id="testimonial">
+            “Finally, tech that adapts to<br> me, not the other way around. Life-
+            <br>changing.”
+            <br>
+            <br>
+            – Sophia Kalin, Engineer
+          </p>
       </div>
     </section>
-    
-    <div class="seperator"></div>
-    
+
+<div class="seperator"></div>
+
     <section id="mission">
       <h2>
-        Redefining the definition of prosthetics
+        Redefining the definition of <br class="dBr">prosthetics
       </h2>
       <div>
         <p>
-          For centuries, prosthetics were tools—functional, but limited.
-We asked: what if they could be more?
-Not just replacements, but enhancements.
-Technology that restores movement, creativity, and freedom—while unlocking new possibilities for the future of humanity.
+          For centuries, prosthetics were tools—functional, but limited.<br class="dBr">
+          We asked: what if they could be more?<br class="dBr">
+          Not just replacements, but enhancements.<br class="dBr">
+          Technology that restores movement, creativity, and freedom—<br class="dBr">
+          while unlocking new possibilities for the future of humanity.
         </p>
         <p>
-          Our story isn’t just about building prosthetics.
-It’s about merging biology with robotics to empower people—turning limitations into strengths.
+          Our story isn’t just about building prosthetics.<br class="dBr">
+          It’s about merging biology with robotics to empower people<br class="dBr">
+          —turning limitations into strengths.
         </p>
       </div>
+      
     </section>
-    
-    <div class="seperator"></div>
-    
+
+<div class="seperator"></div>
+
     <section id="guarantee">
-      <h2>
-        Our promise to <br>you
+      <img src="../assets/fLP(desktop)gradient4.svg" id="guaranteeGradient">
+      <h2 id="guaranteeTitleDiv">
+        Our promise to <br class="mobileBr">you
       </h2>
-      <img src="/shield.png">
+      <img src="../assets/shield.png">
       <div>
         <p>
-          Every prosthetic we create is engineered with precision, tested for durability, and designed with one purpose: to empower you without compromise.
-If it doesn’t feel natural, responsive, and reliable—we’ll make it right.
+          Every prosthetic we create is engineered with precision, tested for <br class="dBr">
+          durability, and designed with one purpose: to empower you without <br class="dBr">
+          compromise.<br class="dBr">
+          If it doesn’t feel natural, responsive, and reliable—we’ll make it right.
         </p>
       </div>
+      <button id="contact">Contact Us</button>
+      <button><a href="./login.html">Login</a></button>
     </section>
-    <button id="contact">Contact Us</button>
-    
   </main>
-  <!-- Project -->
-  <script src="main.js"></script>
+  
+  <script type="module" src="main.js"></script>
 </body>
+
 </html>

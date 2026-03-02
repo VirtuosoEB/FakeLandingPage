@@ -1,0 +1,216 @@
+body {
+    text-align: center;
+    font-size: 15pt;
+    margin: 0;
+    background-color: #0B1B2B;
+    overflow-x: hidden;
+}
+
+main{
+    overflow-x: hidden !important;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+h1, h2, p, h3{
+    color: #f5f5dc;
+    font-family: 'Poppins', sans-serif;
+
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 36px;
+}
+button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  height: 44px;
+  border-radius: 8px;
+  margin-top: 16px;
+  border: none;
+  background-color: #00aeef;
+  color: white;
+
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 8px rgba(0, 174, 239, 0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 16px rgba(0, 174, 239, 0.8),
+      0 0 32px rgba(0, 174, 239, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(0, 174, 239, 0.4);
+  }
+}
+
+.seperator {
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.85) 70%);
+    opacity: 0.5;
+}
+
+.mobileBr, #testemonialDivMobile, #mobileGradient{
+    display: none !important;
+}
+
+#hero{
+    padding: 0 0 0 1.5rem;
+    background: url("../assets/heroBackground(desktop).png");
+    background-size: 100vw 100vh;
+    position: relative;
+}
+#hero h1 {
+  margin-top: 0;
+}
+
+
+#gradient{
+position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* sends it behind everything */
+}
+
+#benefitsContainer{
+    display: flex;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 30px 0px 30px;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+
+}
+
+#benefits-gradient{
+    position: absolute;
+    left: 0%;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.benefitIcon {
+    text-align: center;
+    background-color: #2a2f36;
+    width: 30%;
+    border-radius: 20%;
+    aspect-ratio: 1 / 1;
+    order: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefitTitle{
+    order: 1;
+}
+.benefitInfo{
+    order: 3;
+}
+.benefitIcon img{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#testimonialDiv{
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#testimonial{
+    background-color: #2a2f36;
+    width: 500px;
+    height: 200px;
+    margin: 10%;
+    padding: 50px 0% 0% 50px;
+    border-radius: 10px;
+    text-align: left;
+}
+#socialProof{
+    position: relative;
+}
+#socialProofGradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;      /* relative to section, not viewport */
+    height: 100%;     /* relative to section */
+    z-index: -1;
+    object-fit: cover;
+}
+
+#mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("/missionBackground(desktop).png");
+    background-size: 100vw 100vh;
+}
+#mission div{
+    background: linear-gradient(to right, rgb(42, 47, 54, 0.5), rgb(245, 245, 220, 0.5) );
+    border-radius: 10px;
+    text-align: left;
+    width: 50%;
+    padding-left: 40px;
+}
+
+#guarantee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#guaranteeGradient{
+    position: absolute;
+    width: 100%;      /* relative to section, not viewport */
+    height: 100%;     /* relative to section */
+    z-index: -1;
+    object-fit: cover;
+}
+#guarantee div{
+    background: linear-gradient(to right, rgb(42, 47, 54, 0.5), rgb(245, 245, 220, 0.5) );
+    border-radius: 10px;
+    text-align: left;
+    width: 50%;
+    padding: 40px;
+    margin-top: 30px;
+}
