@@ -7,18 +7,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   const { data: { user } } = await supabase.auth.getUser();
   if (user) {
     console.log("Already logged in:", user.email);
-    if (window.location.pathname.endsWith("index.html")) {
-      window.location.href = "./index.html";
-    }
+    window.location.href = "./index.html";
   }
 
   // --- Monitor auth state ---
   supabase.auth.onAuthStateChange((event, session) => {
     if (session?.user) {
       console.log("logged in");
-      if (window.location.pathname.endsWith("index.html")) {
-        window.location.href = "./index.html";
-      }
+      window.location.href = "./index.html";
     } else {
       console.log("logged out");
     }

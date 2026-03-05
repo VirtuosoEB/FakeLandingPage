@@ -15,7 +15,6 @@ export async function loadChanges() {
 
   if (error) console.error("Error loading changes:", error);
   else if (data?.changes) {
-    localStorage.clear();
     localStorage.setItem("currentVersion", JSON.stringify(data.changes));
     console.log("Loaded changes:", data.changes);
   } else {
@@ -56,13 +55,13 @@ export function applyChanges() {
         element.style.color = change.changes.color;
         console.log(change.color);
         element.style.fontSize = change.changes.fontSize;
-        element.textContent = change.changes.text;
+        element.innerText = change.changes.text;
         break;
       case "button":
         element.style.color = change.changes.color;
         element.style.fontSize = change.changes.fontSize;
         element.style.backgroundColor = change.changes.backgroundColor;
-        element.textContent = change.changes.text;
+        element.innerText = change.changes.text;
         break;
     }
   });
